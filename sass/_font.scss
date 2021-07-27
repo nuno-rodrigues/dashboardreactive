@@ -1,0 +1,26 @@
+/* ================================================================ */
+/*  Font                                                            */
+/* ================================================================ */
+
+$path: "DashboardReactive";
+
+@font-face {
+    font-family: 'nunito';
+    src: url('/'+$path+'/nunito-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('/'+$path+'/nunito-medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('/'+$path+'/nunito-bold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}

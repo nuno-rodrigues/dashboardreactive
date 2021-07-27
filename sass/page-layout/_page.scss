@@ -1,0 +1,47 @@
+.layout-side {
+    .app-menu-content {
+        background-color: var(--color-neutral-10);
+        filter: drop-shadow(2px 4px 6px var(--color-neutral-10));
+    }
+    .header-navigation {
+        > div {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+
+            > div {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .app-menu-links {
+        a {
+            color: var(--color-neutral-6);
+            border-left: none;
+            padding: var(--space-s) var(--space-none) var(--space-s) var(--space-base);
+            display: flex;
+            align-items: center;
+
+            img  {
+                filter: invert(100%) brightness(.5);
+            }
+
+            &:hover {
+                color: var(--color-neutral-5);
+                img {
+                    filter: invert(100%) brightness(1);
+                }
+            }
+            &.active {
+                color: var(--color-neutral-0);
+                border-left: none;
+                border-right: var(--border-size-m) solid var(--color-neutral-0);
+                img {
+                    filter: invert(100%) brightness(1);
+                }
+            }
+        }
+    } 
+}

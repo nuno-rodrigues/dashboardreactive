@@ -1,0 +1,14 @@
+.form-control[data-input],
+.form-control[data-textarea] {
+    background-color: var(--color-neutral-10);
+    border: var(--border-size-s) solid var(--color-neutral-10);
+    color: var(--color-neutral-6);
+
+    &:focus {
+        border: var(--border-size-s) solid var(--color-neutral-0);
+    }
+
+    &::placeholder {
+        color: var(--color-neutral-6);
+    }
+}
